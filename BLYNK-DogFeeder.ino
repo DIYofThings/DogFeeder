@@ -71,7 +71,7 @@ void setup()
 {
   // Debug console
   Serial.begin(9600);
-  petGate.attach(2);
+  petGate.attach(D6);
   petGate.write(gateStart);
   Blynk.begin(auth, ssid, pass);
 }
